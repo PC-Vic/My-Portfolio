@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 5px;
+}
+
+.my-name {
+    color: rgb(35, 48, 48);
+    background-color: aquamarine;
+    padding: 20px 0px 20px 0px
+    margin: 0;
+}
+
+header {
+    padding: 5px;
+    background-color: rgb(39, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none; 
+    justify-content: flex-end;
+    align-items: center;
+    color:  aquamarine;
+    justify-content: space-evenly;
+    gap: 2rem  
+}
+
+#sub {
+    display: flex
+    flex-direction: column;
+    padding: 100px;
+    margin: 0px;
+    border: solid black;
+}
+
+
+/*about me paragraph*/
+article {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+article div {
+    background-color: lightgray;
+    padding: 10px;
+    width: 80%;
+    padding-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+    border: solid black;
+    width: 19%; 
+    
+}
+
+/*Sidebar*/
+ul li.side {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/*images*/
+.gallery img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    header {
+        background-color: rgb(110, 196, 245);
+    }
+
+    body {
+        background-color: rgb(155, 255, 180);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-color: rgb(226, 100, 100);
+    }
+
+    body {
+        background-color: aquamarine;
+    }
+}

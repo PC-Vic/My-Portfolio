@@ -50,6 +50,8 @@
     color: #ffffff; /* Set text color for better contrast */
     text-align: center; /* Center-align the text within the section */
     padding: 20px; /* Add padding for spacing */
+    /* line-height: 2.8; */
+    margin-top: -160px;
 }
 
 /* Text color animation */
@@ -186,7 +188,35 @@
     transition: border-color 0.3s; 
 }
 
+/* Project Introduction Section */
+.pill-intro {
+    position: relative;
+    background-color: #b13939;
+    color: whitesmoke;
+    padding: 50px 5px; /* Adjust the padding for the pill shape */
+    border-radius: 70px; /* Create the pill shape with rounded border */
+    text-align: center;
+    margin: -70px auto 5px; /* Adjust margins for overlap */
+    z-index: 1;
+    max-width: 50%;
+    margin-bottom: 100px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: box-shadow 0.3s ease-in-out;
+}
 
+.pill-intro:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); 
+    color:#fafafa;
+}
+
+.intro-title {
+    font-size: 35px; /* Adjust font size */
+    margin: 0;
+}
+
+.weather-cards-container {
+    /* Your existing styles for the project cards container */
+}
 
 
 /* Main Project Card Dish Dash */

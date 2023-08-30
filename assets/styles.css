@@ -1,82 +1,524 @@
 * {
-    box-sizing: border-box;
-    padding: 0; 
-    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.my-name {
-    color: rgb(35, 48, 48);
-    background-color: aquamarine;
-    padding: 20px 0px 20px 0px
-    margin: 0;
-}
-
-header {
-    padding: 5px;
-    background-color: rgb(39, 32, 32);
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px; 
+    background-color: rgb(25, 5, 71);
+    color: rgb(178, 195, 228);
+}
+
+#my-name {
+    font-size: 35px;
+    margin-left: 20px;
 }
 
 .nav-list {
+    list-style: none;
     display: flex;
-    list-style-type: none; 
-    justify-content: flex-end;
-    align-items: center;
-    color:  aquamarine;
-    justify-content: space-evenly;
-    gap: 2rem  
+    gap: 30px;
+    padding: 0;
+    margin-right: 90px;
 }
 
-#sub {
-    display: flex
-    flex-direction: column;
-    padding: 100px;
-    margin: 0px;
-    border: solid black;
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom-color 0.3s;
+    font-weight: 600;
+    color: rgb(178, 195, 228);
 }
 
-
-/*about me paragraph*/
-article {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 50px;
-}
-
-article div {
-    background-color: lightgray;
-    padding: 10px;
-    width: 80%;
-    padding-bottom: 40px;
-}
-
-ul {
-    list-style-type: none;
-    border: solid black;
-    width: 19%; 
+.nav-list li a:hover {
+    color: #a50d8c;
+    border-bottom-color: #ffffff;
     
 }
 
-/*Sidebar*/
-ul li.side {
+/* Introduction Section */
+.intro-container {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Set a minimum height for the section */
+    background-color: rgb(25, 5, 71);
+    color: #ffffff; /* Set text color for better contrast */
+    text-align: center; /* Center-align the text within the section */
+    padding: 20px; /* Add padding for spacing */
 }
 
-/*images*/
-.gallery img {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 600px;
-    height: 300px;
+/* Text color animation */
+@keyframes colorChange {
+    0% {
+        color: #ff9900; 
+    }
+    50% {
+        color: #e74c3c; 
+    }
+    100% {
+        color: #3498db; 
+    }
 }
+
+#intro-title {
+    font-size: 60px;
+    margin-bottom: 10px;
+    animation: colorChange 10s infinite; /* Apply the animation */
+    line-height: 1.0;
+}
+
+#intro-par {
+    color: rgb(178, 195, 228);
+    font-size: 30px;
+}
+
+/* Intro Button Projects */
+.round-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: #208cbe; /* Change to your desired button color */
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.round-button:hover {
+    background-color: #ff5a5f; /* Change to your desired hover color */
+    transform: scale(1.15);
+}
+
+/* About Me Section */
+#about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px;
+    background-color: #f7f7f7;
+}
+
+#prof-greeting {
+    font-size: 60px;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+#prof-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+.profile-picture {
+    text-align: center; /* Center the image horizontally */
+    margin-top: -80px;
+}
+
+.profile-picture img {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Preserve aspect ratio and fill the container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.profile-picture img:hover {
+    box-shadow: 0px 4px 8px rgba(2, 3, 2, 2.1);
+    /* transform: scale(1.1); */
+    transition:
+    .5s ease-in-out transform,
+    .5s ease-in-out box-shadow;
+    transform:
+    translate3d(0px, 0px, 0px)
+    rotateX(188deg)
+    rotateZ(180deg);
+}
+
+/* Profile animation */
+@keyframes scaleAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+#prof-greeting {
+    animation: scaleAnimation 10s infinite; 
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+#my-skills {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.skill {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    background-color: #ffffff; /* Change to your desired skill color */
+    color: #208cbe;
+    text-align: center;
+    cursor: default;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: 2px solid transparent; /* Start with a transparent border */
+    transition: border-color 0.3s; 
+}
+
+
+
+
+/* Main Project Card Dish Dash */
+#main-project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    height: 400px;
+    max-width: 1200px; 
+}
+
+
+
+#main-project-image {
+    position: relative;
+}
+
+#main-project-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#main-project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(35, 125, 241, 0.3);
+    color: white;
+    opacity: 0; /* Hide the overlay by default */
+    transition: opacity 0.2s;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-project-image:hover #main-project-overlay {
+    opacity: 1; 
+}
+
+#main-project-title {
+    margin: 0;
+    font-size: 50px;
+}
+
+#main-project-link {
+    color: white;
+    text-decoration: none;
+}
+
+#main-project-title + p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#main-project-link:hover {
+    text-decoration: underline;
+}
+
+/* Project Cards Container */
+.project-cards-container {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    margin: 0 auto; 
+    max-width: 1700px; 
+}
+
+/* 3 Project Cards, Weather */
+#weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    height: 700px;
+    max-width: 500px; 
+}
+
+
+.project-image {
+    position: relative;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#weather-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(56, 178, 235, 0.7);
+    color: white;
+    opacity: 0; /* Hide the overlay by default */
+    transition: opacity 0.3s;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-image:hover #weather-overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.project-title {
+    margin: 0;
+    font-size: 50px;
+}
+
+.project-link {
+    color: white;
+    text-decoration: none;
+}
+
+.project-title + p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Quiz App Card */
+#quiz-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    height: 700px;
+    max-width: 500px; 
+}
+
+
+.project-image {
+    position: relative;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#quiz-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(238, 102, 61, 0.2);
+    color: white;
+    opacity: 0; /* Hide the overlay by default */
+    transition: opacity 0.3s;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-image:hover #quiz-overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.project-title {
+    margin: 0;
+    font-size: 50px;
+}
+
+.project-link {
+    color: white;
+    text-decoration: none;
+}
+
+.project-title + p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Password Generator Card */
+#password-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    height: 700px;
+    max-width: 500px; 
+}
+
+
+.project-image {
+    position: relative;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#pass-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1, 21, 58, 0.3);
+    color: white;
+    opacity: 0; /* Hide the overlay by default */
+    transition: opacity 0.3s;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-image:hover #pass-overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.project-title {
+    margin: 0;
+    font-size: 50px;
+}
+
+.project-link {
+    color: white;
+    text-decoration: none;
+}
+
+.project-title + p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* .project-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image img {
+    max-width: 100%; Make the image fit the container
+    height: auto;
+    opacity: 0.7;
+}
+
+.project-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.project-title {
+    margin-top: 0;
+    color: #208cbe;
+}
+
+.project-description {
+    color: #333;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff5a5f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #d32f2f;
+}
+ */
+
+
+
+
+
 
 /* Media Queries */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     header {
         background-color: rgb(110, 196, 245);
     }
@@ -94,4 +536,4 @@ ul li.side {
     body {
         background-color: aquamarine;
     }
-}
+} */

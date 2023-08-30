@@ -4,71 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victor Nieves | Full Stack Developer Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href=".\assets\styles.css">
 </head>
 
 <!-- Header & navigation links -->
 <body>
-    <header>
-        <h1 class="my-name">Victor Nieves</h1>
+    <header class="header">
+        <h1 id="my-name">Victor Nieves</h1>
         <nav>
             <ul class="nav-list">
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact Me</li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
-<!-- Sidebar -->
-    <aside>
-        <h2 id="sub">Full Stack Developer Student</h2>
-        <div>
-            <ul id="side">
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact Me</li>
-            </ul>
-        </div>
-    </aside>
+    <!-- Introduction Section -->
+    <main>
+        <section class="intro-container">
+            <h2 id="intro-title">Junior Full Stack Developer</h2>
+                <p id="intro-par">I love creating full stack applications and find joy in continually expanding my knowledge</p>
+                <button class="round-button">My Projects</button>
+        </section>
+    </main>
 
-<!-- about me section-->
-    <article>
-        <div>
-            <p>
-                Hello, I'm Victor and I am an aspiring full stack developer who is passionate about creating innovative and user-friendly web applications. Although I'm relatively new to the field, I'm dedicated to constantly learning and honing my skills. I believe in the power of technology to make a positive impact, and I'm excited about the possibilities that full stack development offers. Through my portfolio, I aim to showcase my progress, demonstrate my enthusiasm for coding, and contribute to projects that make a difference. Join me on this journey as I evolve and grow as a developer!
-            </p>
-
-<!-- Images and projects section-->
-            <figure class="gallery">
-                <img id="image-1" src="https://media.discordapp.net/attachments/1081659022932975698/1117967727978627203/Vic7_photo-realistic_blue_sky_with_clouds_feb50d06-3275-4bf8-88be-b30275b2327c.png?width=604&height=604">
-                <figcaption>LED Wall (Node)</figcaption>
-
-                <img src="https://media.discordapp.net/attachments/1081659022932975698/1117972736946483300/Vic7_a_realistic_laptop_on_top_of_a_desk_04d9abbb-f4bb-4e19-ab01-f7539655f4ca.png?width=604&height=604">
-                <figcaption>Calculator (Javascript, CSS)</figcaption>
-
-                <img src="https://media.discordapp.net/attachments/1081659022932975698/1117974122866167878/Vic7_a_nice_office_with_office_equipment_realistic_edc1f363-2136-4f96-b329-22799e657b63.png?width=604&height=604">
-                <figcaption>Puzzle (MERN stack)</figcaption>
-
-                <img src="https://media.discordapp.net/attachments/1081659022932975698/1117974594180096020/Vic7_a_nice_realistic_picture_of_mountains_ea187098-f545-42d5-b744-b7a4ecfed155.png?width=604&height=604">
-                <figcaption>Run Buddy (HTML, CSS)</figcaption>
+    <!-- About Me Section -->
+    <section id="about-me">
+        <div id="prof-container">
+            <figure class="profile-picture">
+                <img id="round-logo" src=".\assets\images\logo.svg" alt="Portrait of Victor" width="130" height="130">
             </figure>
+            <div class="prof-content">
+                <h2 id="prof-greeting">Hi, I'm Victor.</h2>
+                    <p>I am a full stack developer who is passionate about creating innovative and user-friendly web applications. Although I'm relatively new to the field, I'm dedicated to constantly learning and honing my skills. I believe in the power of technology to make a positive impact, and I'm excited about the possibilities that full stack development offers. Through my portfolio, I aim to showcase my progress, demonstrate my enthusiasm for coding, and contribute to projects that make a difference. Join me on this journey as I evolve and grow as a developer!</p>
+                <h3 id="my-skills">My skills</h3>
+                    <span class="skills-container">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">Bootstrap</div>
+                        <div class="skill">Responsive Design</div>
+                        <div class="skill">Git</div>
+                        <div class="skill">Github</div>
+                        <div class="skill">Node.js</div>
+                        <div class="skill">Express.js</div>
+                        <div class="skill">React</div>
+                        <div class="skill">SQL</div>
+                        <div class="skill">NoSQL</div>
+                    </span>
+            </div>
         </div>
-    </article>
-       
-
-
-
-
-        
-   
+    </section>
     
+    <!-- Main Project Card -->
+    <section id="main-project-card">
+        <a id="main-project-link" href="https://brennysouza.github.io/dish-dash/">
+            <div id="main-project-image">
+                <img src="./assets/images/Dish-Dash-image-maarten-van-den-heuve.jpg" alt="Project Image">
+                <div id="main-project-overlay">
+                    <h3 id="main-project-title">Dish Dash</h3>
+                    <p>A website that offers users the ability to search for cooking recipes </p>
+                </div>
+            </div>
+        </a>
+    </section>
+    
+
+    <!--  Weather Card -->
+    <div class="project-cards-container">
+    <section id="weather-card" class="project-card">
+        <a class="project-link" href="https://brennysouza.github.io/dish-dash/">
+            <div class="project-image">
+                <img src="./assets/images/Storm -unsplash.jpg" alt="Project Image">
+                <div id="weather-overlay">
+                    <h3 class="project-title">Weather App</h3>
+                    <p>Get live weather data with just a few clicks! </p>
+                </div>
+            </div>
+        </a>
+    </section>
+    <div class="project-card-overlay"></div>
+
+    <!-- Quiz App Card -->
+    <section id="quiz-card" class="project-card">
+        <a class="project-link" href="https://pc-vic.github.io/JavaScript-Quiz-app/">
+            <div class="project-image">
+                <img src="./assets/images/classroom-unsplash.jpg" alt="Project Image">
+                <div id="quiz-overlay">
+                    <h3 class="project-title">Cool Quiz App</h3>
+                    <p>Get live weather data with just a few clicks! </p>
+                </div>
+            </div>
+        </a>
+    </section>
+    <div class="project-card-overlay"></div>
+
+    <!-- Password Gen Card -->
+    <section id="password-card" class="project-card">
+        <a class="project-link" href="https://pc-vic.github.io/Password-Gen/">
+            <div class="project-image">
+                <img src="./assets/images/computerCoding.jpg" alt="Project Image">
+                <div id="pass-overlay">
+                    <h3 class="project-title">Cool Quiz App</h3>
+                    <p>Get live weather data with just a few clicks! </p>
+                </div>
+            </div>
+        </a>
+    </section>
+    <div class="project-card-overlay"></div>
+    </div>
+
+
+ 
+    
+        
+      
+    
+    
+
+    <script src="script.js"></script>
 </body>
-<footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <footer>
+    <div class="sections">
+    <h3>Contact Me</h3>
     <div>
         <p>860-555-5555</p>
-        <p>nievesvic86@gmail.com</p>
+        <p><a href="nievesvic86@gmail.com">nievesvic86@gmail.com</p></a>
         <p><a href="https://github.com/PC-Vic">GitHub</p></a>
     </div>
-</footer>
+    </div>
+</footer> -->
 </html>

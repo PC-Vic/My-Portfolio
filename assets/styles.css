@@ -218,11 +218,6 @@ html {
     margin: 0;
 }
 
-.weather-cards-container {
-    /* Your existing styles for the project cards container */
-}
-
-
 /* Main Project Card Dish Dash */
 #main-project-card {
     display: flex;
@@ -238,8 +233,6 @@ html {
     height: 400px;
     max-width: 1200px; 
 }
-
-
 
 #main-project-image {
     position: relative;
@@ -501,58 +494,52 @@ html {
     text-decoration: underline;
 }
 
-
-
-
-
-
-/* .project-image {
-    flex: 1;
+/* Footer/Contact me section */
+#contact-container {
+    background-color: rgb(25, 5, 71);
+    color: whitesmoke;
+    padding: 100px 0;
     display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
     align-items: center;
+    font-size: larger;
+}
+
+.contact-left {
+    flex: 1; /* Take up as much available space as needed */
+    margin-left: 300px;
+    max-width: 250px;
+    word-wrap: break-word;
     justify-content: center;
 }
 
-.project-image img {
-    max-width: 100%; Make the image fit the container
-    height: auto;
-    opacity: 0.7;
+.contact-right {
+    flex: 1; /* Take up as much available space as needed */
+    text-align: right; /* Align the text to the right */
+    margin-right: 300px;
 }
 
-.project-info {
-    flex: 2;
-    padding: 20px;
-}
-
-.project-title {
-    margin-top: 0;
-    color: #208cbe;
-}
-
-.project-description {
-    color: #333;
-}
-
-.project-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: #ff5a5f;
+/* Style the contact links */
+#contact-info a {
     text-decoration: none;
-    transition: color 0.3s;
+    color: #208cbe;
+    margin: 10px 0;
+    display: block;
 }
 
-.project-link:hover {
-    color: #d32f2f;
+#contact-info a:hover {
+    color: #af0e0e;
+    font-weight: 700;
 }
- */
 
 
 
 
 
 
-/* Media Queries */
-/* @media screen and (max-width: 1024px) {
+Media Queries */
+@media screen and (max-width: 1024px) {
     header {
         background-color: rgb(110, 196, 245);
     }
@@ -570,4 +557,4 @@ html {
     body {
         background-color: aquamarine;
     }
-} */
+}

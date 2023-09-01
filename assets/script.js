@@ -14,3 +14,8 @@ document.querySelector('a[href="#projects"]').addEventListener('click', function
     e.preventDefault();
     scrollToSection('#projects');
 });
+
+document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
+    e.preventDefault();
+    scrollToSection('#contact');
+});

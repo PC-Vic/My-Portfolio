@@ -31,15 +31,17 @@ html {
 .nav-list li a {
     text-decoration: none;
     color: #333;
-    border-bottom: 2px solid transparent;
     transition: color 0.3s, border-bottom-color 0.3s;
+    transition: size 0.3s, font-size 0.5s;
     font-weight: 600;
     color: rgb(178, 195, 228);
 }
 
 .nav-list li a:hover {
     color: #a50d8c;
-    border-bottom-color: #ffffff;
+    /* font-size: larger; */
+    font-size: large;
+    
     
 }
 
@@ -498,7 +500,7 @@ html {
 #contact-container {
     background-color: rgb(25, 5, 71);
     color: whitesmoke;
-    padding: 100px 0;
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     margin-top: 100px;

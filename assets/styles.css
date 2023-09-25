@@ -41,8 +41,6 @@ html {
     color: #a50d8c;
     /* font-size: larger; */
     font-size: large;
-    
-    
 }
 
 /* Introduction Section */
@@ -540,23 +538,42 @@ html {
 
 
 
-Media Queries */
-@media screen and (max-width: 1024px) {
-    header {
-        background-color: rgb(110, 196, 245);
+
+
+/* @media (max-width: 1280px) {
+    .project-cards-container {
+       
     }
 
-    body {
-        background-color: rgb(155, 255, 180);
+    .project-card {
+        width: 30%; 
+        height: 700px; 
+        padding: 0px;
+    }
+
+    .project-card img {
+        display: block;
+        height: 100%; 
+        width: auto; 
+        justify-content: center;
+    }
+} */
+
+@media (max-width: 1280px) {
+    .project-cards-container {
+        /* Your existing styles for .project-cards-container here */
+    }
+
+    .project-card {
+        width: 30%;
+        /* Adjust the padding as needed */
+        padding: 0px; /* Example padding value */
+        height: fit-content;
+    }
+
+    .project-card img {
+        max-height: 100%;
+        width: auto;
     }
 }
 
-@media screen and (max-width: 768px) {
-    header {
-        background-color: rgb(226, 100, 100);
-    }
-
-    body {
-        background-color: aquamarine;
-    }
-}

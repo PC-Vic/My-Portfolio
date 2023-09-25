@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href=".\assets\styles.css">
 </head>
 
@@ -16,8 +17,8 @@
         <h1 id="my-name">Victor Nieves</h1>
         <nav>
             <ul class="nav-list">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#work">PROJECTS</a></li>
+                <li><a href="#about-me">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
@@ -28,7 +29,7 @@
         <section class="intro-container">
             <h2 id="intro-title">Junior Full Stack Developer</h2>
                 <p id="intro-par">I love creating full stack applications and find joy in continually expanding my knowledge</p>
-                <button class="round-button">My Projects</button>
+                <a href="#projects"><button class="round-button">My Projects</button></a>
         </section>
     </main>
 
@@ -61,14 +62,14 @@
     </section>
 
     <!-- Project Introduction -->
-    <section class="intro-card pill-intro">
+    <section id="projects" class="intro-card pill-intro">
         <h3 class="intro-title">My Projects</h3>
     </section>
     
  
     <!-- Main Project Card -->
     <section id="main-project-card">
-        <a id="main-project-link" href="https://brennysouza.github.io/dish-dash/">
+        <a id="main-project-link" href="https://brennysouza.github.io/dish-dash/" target="_blank">
             <div id="main-project-image">
                 <img src="./assets/images/Dish-Dash-image-maarten-van-den-heuve.jpg" alt="Project Image">
                 <div id="main-project-overlay">
@@ -83,7 +84,7 @@
     <!--  Weather Card -->
     <div class="project-cards-container">
     <section id="weather-card" class="project-card">
-        <a class="project-link" href="https://pc-vic.github.io/Weather-Wizard/">
+        <a class="project-link" href="https://pc-vic.github.io/Weather-Wizard/" target="_blank">
             <div class="project-image">
                 <img src="./assets/images/Storm -unsplash.jpg" alt="Project Image">
                 <div id="weather-overlay">
@@ -97,7 +98,7 @@
 
     <!-- Quiz App Card -->
     <section id="quiz-card" class="project-card">
-        <a class="project-link" href="https://pc-vic.github.io/JavaScript-Quiz-app/">
+        <a class="project-link" href="https://pc-vic.github.io/JavaScript-Quiz-app/" target="_blank">
             <div class="project-image">
                 <img src="./assets/images/classroom-unsplash.jpg" alt="Project Image">
                 <div id="quiz-overlay">
@@ -111,11 +112,11 @@
 
     <!-- Password Gen Card -->
     <section id="password-card" class="project-card">
-        <a class="project-link" href="https://pc-vic.github.io/Password-Gen/">
+        <a class="project-link" href="https://pc-vic.github.io/Password-Gen/" target="_blank">
             <div class="project-image">
                 <img src="./assets/images/computerCoding.jpg" alt="Project Image">
                 <div id="pass-overlay">
-                    <h3 class="project-title">Cool Quiz App</h3>
+                    <h3 class="project-title">Password Gen</h3>
                     <p>Get live weather data with just a few clicks! </p>
                 </div>
             </div>
@@ -123,24 +124,27 @@
     </section>
     <div class="project-card-overlay"></div>
     </div>
-
-
- 
-    
-        
-      
-    
-    
-
-    <script src="script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 
-
-
-
-
-
-
+<!-- Footer/Contact Me -->
+<footer id="contact">
+    <div id="contact-container" class="flex-container">
+        <div class="contact-left">
+            <h3 id="footer-contact-me">VICTOR NIEVES</h3>
+            <p>Thank you for visiting and please don't hesitate to contact me!</p>
+        </div>
+        <div id="contact-info" class="contact-right">
+            <h3>Contact me</h3>
+            <p><a href="mailto:nievesvic86@gmail.com">nievesvic86@gmail.com</a></p>
+            <p><a href="https://github.com/PC-Vic" target="_blank">GitHub</a></p>
+            <a href="https://github.com/PC-Vic" target="_blank">
+            <i class="fa-brands fa-github fa-2xl" style="color: #af0e0e;"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+</html>
 
 
 
@@ -148,13 +152,17 @@
 
 
 <!-- <footer>
-    <div class="sections">
-    <h3>Contact Me</h3>
-    <div>
-        <p>860-555-5555</p>
+    <div id="contact-container">
+    <h3 id="footer-contact-me">VICTOR NIEVES</h3>
+    <p>Thank you for visiting and please don't hesitate to contact me!</p>
+    <div id="contact-info">
         <p><a href="nievesvic86@gmail.com">nievesvic86@gmail.com</p></a>
         <p><a href="https://github.com/PC-Vic">GitHub</p></a>
     </div>
     </div>
 </footer> -->
-</html>
+
+
+
+
+

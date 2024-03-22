@@ -231,7 +231,10 @@ html {
     overflow: hidden;
     margin: 20px auto;
     height: 400px;
-    max-width: 1200px; 
+    max-width: 1200px;
+    
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 #main-project-image {
